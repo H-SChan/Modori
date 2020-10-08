@@ -10,52 +10,64 @@ import {
     BiAlignRight,
 } from "react-icons/bi";
 import { ImFontSize, ImStrikethrough } from "react-icons/im";
-import { MdFormatColorFill } from "react-icons/md";
+import { MdFormatColorFill, MdSpellcheck } from "react-icons/md";
 import { AiOutlineLine } from "react-icons/ai";
 
 function CanvasToolBar() {
     return (
         <div className="CanvasToolBar">
             <div className="CanvasToolBar_textOption">
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="폰트 크기 변경">
                     <ImFontSize></ImFontSize>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="폰트 굵기 변경">
                     <BiBold></BiBold>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button
+                    className="CanvasToolBar_button"
+                    title="폰트 기울기 설정"
+                >
                     <BiItalic></BiItalic>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="밑줄 표시">
                     <BiUnderline></BiUnderline>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="취소선 표시">
                     <ImStrikethrough></ImStrikethrough>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="폰트 색 변경">
                     <BiFontColor></BiFontColor>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="글 왼쪽 정렬">
                     <BiAlignLeft></BiAlignLeft>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="글 가운데 정렬">
                     <BiAlignMiddle></BiAlignMiddle>
                 </button>
-                <button className="CanvasToolBar_button">
+                <button className="CanvasToolBar_button" title="글 오른쪽 정렬">
                     <BiAlignRight></BiAlignRight>
                 </button>
-                <div>
-                    <select id="change_font">
-                        <option value="">기본서체</option>
-                        <option value="">Noto Sans KR</option>
-                    </select>
-                    <button className="CanvasToolBar_button">
-                        <MdFormatColorFill></MdFormatColorFill>
-                    </button>
-                    <button className="CanvasToolBar_button">
-                        <AiOutlineLine></AiOutlineLine>
-                    </button>
-                </div>
+
+                <select id="change_font">
+                    <option value="">기본서체</option>
+                    <option value="">Noto Sans KR</option>
+                </select>
+                <button
+                    className="CanvasToolBar_button"
+                    title="폰트 배경색 변경"
+                >
+                    <MdFormatColorFill></MdFormatColorFill>
+                </button>
+                <button className="CanvasToolBar_button" title="구분선 생성">
+                    <AiOutlineLine></AiOutlineLine>
+                </button>
+                <button
+                    className="CanvasToolBar_button"
+                    title="맞춤법 확인"
+                    spellCheck="true"
+                >
+                    <MdSpellcheck></MdSpellcheck>
+                </button>
             </div>
             <div className="CanvasToolBar_drawOption"></div>
         </div>
