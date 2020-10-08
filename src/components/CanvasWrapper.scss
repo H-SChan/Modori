@@ -1,16 +1,28 @@
 .CanvasWrapper {
     margin: 10px;
+    padding: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.64);
-    height: 68vh;
+    height: 74%;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     overflow: hidden;
-    &_text {
+    &_text_container {
         flex: 1;
     }
-    &_draw {
-        border-left: 1px solid black;
+    &_text {
+        resize: none;
+        width: 99%;
+        height: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
+        padding: 10px;
+    }
+    &_draw_container {
+        border-left: 5px dotted;
         flex: 1;
     }
 }
