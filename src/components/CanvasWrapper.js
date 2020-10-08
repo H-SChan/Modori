@@ -14,7 +14,7 @@ function CanvasWrapper() {
                 ></textarea>
             </div>
             <div className="CanvasWrapper_draw_container">
-                <canvas></canvas>
+                <canvas className="CanvasWrapper_draw"></canvas>
             </div>
         </div>
     );

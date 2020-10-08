@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
 .CanvasWrapper {
     margin: 10px;
     padding: 10px;
@@ -5,12 +7,13 @@
     height: 74%;
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow: hidden;
     &_text_container {
         flex: 1;
     }
     &_text {
+        font-family: "Noto Sans KR", sans-serif;
         resize: none;
         width: 99%;
         height: 100%;
@@ -24,5 +27,17 @@
     &_draw_container {
         border-left: 5px dotted;
         flex: 1;
+    }
+    &_draw {
+        margin-left: 10px;
+        width: 99%;
+        height: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
+        padding: 10px;
+        background-color: white;
     }
 }
