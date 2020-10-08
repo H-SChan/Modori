@@ -1,31 +1,63 @@
 import React from "react";
 import "./CanvasToolBar.scss";
+import {
+    BiBold,
+    BiItalic,
+    BiUnderline,
+    BiFontColor,
+    BiAlignLeft,
+    BiAlignMiddle,
+    BiAlignRight,
+} from "react-icons/bi";
+import { ImFontSize, ImStrikethrough } from "react-icons/im";
+import { MdFormatColorFill } from "react-icons/md";
+import { AiOutlineLine } from "react-icons/ai";
 
 function CanvasToolBar() {
     return (
         <div className="CanvasToolBar">
-            버튼은 아니지만 Cntl C+Cntl V해서 사진 붙여넣기랑 드래그앤 드랍으로
-            해야됨. 정 안되면 버튼으로 만들어서 하면 좋을듯<p></p>
-            필요-
-            <button>폰트 크기</button>
-            <button>굵게</button>
-            <button>기울임꼴</button>
-            <button>밑줄</button>
-            <button>취소선</button>
-            <button>글씨 색 변경</button>
-            <p></p>
-            <button>좌측정렬</button>
-            <button>중앙정렬</button>
-            <button>우측정렬</button>
-            <p></p>
-            선호-
-            <button>폰트 변경</button>
-            <button>글씨 바탕색 변경</button>
-            <button>표 만들기</button>
-            <button>
-                인용(박스를 하나 생성해서 그 안에 글을 써 강조될수 있도록)
-            </button>
-            <button>구분선 </button>
+            <div className="CanvasToolBar_textOption">
+                <button className="CanvasToolBar_button">
+                    <ImFontSize></ImFontSize>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <BiBold></BiBold>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <BiItalic></BiItalic>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <BiUnderline></BiUnderline>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <ImStrikethrough></ImStrikethrough>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <BiFontColor></BiFontColor>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <BiAlignLeft></BiAlignLeft>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <BiAlignMiddle></BiAlignMiddle>
+                </button>
+                <button className="CanvasToolBar_button">
+                    <BiAlignRight></BiAlignRight>
+                </button>
+                <div>
+                    <select id="change_font">
+                        <option value="">기본서체</option>
+                        <option value="">Noto Sans KR</option>
+                    </select>
+                    <button className="CanvasToolBar_button">
+                        <MdFormatColorFill></MdFormatColorFill>
+                    </button>
+                    <button className="CanvasToolBar_button">
+                        <AiOutlineLine></AiOutlineLine>
+                    </button>
+                </div>
+            </div>
+            <div className="CanvasToolBar_drawOption"></div>
         </div>
     );
 }

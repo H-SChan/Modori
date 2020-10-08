@@ -4,4 +4,22 @@
     height: 15vh;
     background: #74b9ff;
     padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    &_button {
+        margin: 5px;
+    }
+    &_textOption {
+        background-color: yellow;
+        padding: 20px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
+        width: 30%;
+    }
+    &_drawOption {
+        background-color: yellowgreen;
+        padding: 20px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
+        width: 30%;
+    }
 }
