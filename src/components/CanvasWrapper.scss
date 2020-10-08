@@ -1,0 +1,16 @@
+.CanvasWrapper {
+    margin: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.64);
+    height: 68vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    &_text {
+        flex: 1;
+    }
+    &_draw {
+        border-left: 1px solid black;
+        flex: 1;
+    }
+}

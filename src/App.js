@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import Canvas from "./pages/Canvas";
+const GlobalStyle = createGlobalStyle`
+  body {
+    background : #f2f2f2; 
+    
+  }
+`;
+//GlobalStyle 컴포넌트는 전역에 적용되는 컴포넌트이다.
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <GlobalStyle></GlobalStyle>
+            <Canvas></Canvas>
+        </>
+    );
 }
 
 export default App;
