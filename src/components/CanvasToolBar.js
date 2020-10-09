@@ -68,8 +68,41 @@ function CanvasToolBar() {
                 >
                     <MdSpellcheck></MdSpellcheck>
                 </button>
+                <div>
+                    선호기능-↓
+                    <p>Cntl C, Cntl V</p>
+                </div>
             </div>
-            <div className="CanvasToolBar_drawOption"></div>
+            <div className="CanvasToolBar_drawOption">
+                <div>
+                    필수-
+                    <button>펜(사각)</button>
+                    <button>펜(둥근)</button>
+                    <button>지우개</button>
+                    <button>색 변경</button>
+                    <button>두께조절</button>
+                </div>
+                <div>
+                    선호-
+                    <button>선지우개</button>
+                    <button>페인트통</button>
+                    <button>붓</button>
+                    <button>에어브러쉬</button>
+                    <button>색 저장</button>
+                    <button>스포이드</button>
+                    <button>사각형 그리기 툴</button>
+                    <button>삼각형 그리기 툴</button>
+                    <button>원 그리기 툴</button>
+                    <button>되돌리기(전)</button>
+                    <button>되도리기(후)</button>
+                </div>
+                <div>
+                    추가기능-↓
+                    <p>한 점을 찍고 Shift키를 누른채로 점을 찍으면 직선이 그이게 하기</p>
+                    <p>Cntl Z</p>
+                    <p>Cntl C, Cntl V</p>
+                </div>
+            </div>
         </div>
     );
 }
